@@ -55,8 +55,6 @@ def register_callbacks(app):
            data=[go.Scatter(x=data['hours'], y=data['pm10'], mode='lines+markers', name='Атмосферное давление')],
            layout=go.Layout(title='PM10 по часам', xaxis_title='Время', yaxis_title='PM10 (ед.)', template='plotly_dark') 
         )
-
-
         
 
         return weather_info, temp_fig, ap_fig, o3_fig,  so2_fig,  pm2_5_fig,  pm10_fig
