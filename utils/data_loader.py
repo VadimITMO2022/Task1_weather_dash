@@ -91,11 +91,19 @@ def load_data(city):
     temp = current['temp_c']
     
     hours = [h['time'][-5:] for h in forecast_hours]
+<<<<<<< HEAD
   #  temps = [h['temp_c'] for h in forecast_hours]
   #  ap = [h['pressure_mb'] for h in forecast_hours]
   #  humidity = [h['humidity'] for h in forecast_hours]
   #  wind = [h['wind_kph'] for h in forecast_hours]
   #  wind_dirs = [h['wind_degree'] for h in forecast_hours]
+=======
+    temps = [h['temp_c'] for h in forecast_hours]
+    ap = [h['pressure_mb'] for h in forecast_hours]
+    humidity = [h['humidity'] for h in forecast_hours]
+    wind = [h['wind_kph'] for h in forecast_hours]
+    wind_dirs = [h['wind_degree'] for h in forecast_hours]
+>>>>>>> c885110ea8cdc3cec7066a6bf57959fa0d9a0cad
     
 
     date= [h["time"][0:10] for h in forecast_hours][0]

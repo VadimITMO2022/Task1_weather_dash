@@ -101,6 +101,7 @@ def register_callbacks(app):
            data=[go.Scatter(x=data['hours'], y=data['pm10'], mode='lines+markers', name='Атмосферное давление')],
            layout=go.Layout(title='PM10 по часам', xaxis_title='Время', yaxis_title='PM10 (ед.)', template='plotly_dark') 
         )
+<<<<<<< HEAD
 
         pm10_fig.update_xaxes ( range = [-0.3,  23.3 ]) 
         pm10_fig.update_layout(
@@ -114,3 +115,8 @@ def register_callbacks(app):
 
         return weather_info, temp_fig, ap_fig, o3_fig,  so2_fig,  pm2_5_fig,  pm10_fig
         
+=======
+        
+
+        return weather_info, temp_fig, ap_fig, o3_fig,  so2_fig,  pm2_5_fig,  pm10_fig
+>>>>>>> c885110ea8cdc3cec7066a6bf57959fa0d9a0cad
